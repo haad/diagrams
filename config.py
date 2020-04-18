@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "programming", "saas", "elastic", "generic", "openstack", "outscale", "cloudflare")
 
 #########################
 #  Resource Processing  #
@@ -31,6 +31,7 @@ FILE_PREFIXES = {
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
     "digitalocean": (),
+    "cloudflare": ("CF-",),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
     "ibm": (),
