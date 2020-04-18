@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "k8s", "alibabacloud", "oci")
+PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "k8s", "alibabacloud", "oci", "cloudflare")
 
 #########################
 #  Resource Processing  #
@@ -28,6 +28,7 @@ FILE_PREFIXES = {
     "onprem": (),
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
+    "cloudflare": ("CF-",),
     "gcp": ("Cloud-",),
     "k8s": (),
     "alibabacloud": (),
