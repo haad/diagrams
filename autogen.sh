@@ -4,7 +4,7 @@ set -e
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
-providers=("onprem" "aws" "azure" "cloudflare" "digitalocean" "gcp" "ibm" "firebase" "k8s" "alibabacloud" "oci" "programming" "saas" "elastic" "generic" "openstack" "outscale" )
+providers=("onprem" "aws" "azure" "gcp" "ibm" "digitalocean" "cloudflare" "firebase" "k8s" "alibabacloud" "oci" "programming" "saas" "elastic" "generic" "openstack" "outscale" "terraform")
 
 if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'
@@ -29,7 +29,7 @@ fi
 # preprocess the resources
 for pvd in "${providers[@]}"; do
   # convert the svg to png for azure provider
-  if [ "$pvd" = "onprem" ] || [ "$pvd" = "azure" ] || [ "$pvd" = "ibm" ]; then
+  if [ "$pvd" = "onprem" ]; then
     echo "converting the svg to png using inkscape for provider '$pvd'"
     python -m scripts.resource svg2png "$pvd"
   fi

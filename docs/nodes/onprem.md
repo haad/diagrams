@@ -56,6 +56,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Teamcity**, **TC** (alias)
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
+- **diagrams.onprem.ci.Waypoint**
 - **diagrams.onprem.ci.Zuulci**, **ZuulCI** (alias)
 
 ## onprem.client
@@ -99,6 +100,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Neo4J**
 - **diagrams.onprem.database.Oracle**
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
+- **diagrams.onprem.database.Ravendb**
 - **diagrams.onprem.database.Scylla**
 
 ## onprem.dns
@@ -125,8 +127,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.iac.Ansible**
 - **diagrams.onprem.iac.Atlantis**
 - **diagrams.onprem.iac.Awx**
+- **diagrams.onprem.iac.Packer**
 - **diagrams.onprem.iac.Puppet**
 - **diagrams.onprem.iac.Terraform**
+- **diagrams.onprem.iac.Vagrant**
 
 ## onprem.identity
 
@@ -224,6 +228,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.security.Bitwarden**
 - **diagrams.onprem.security.Fail2Ban**, **fail2ban** (alias)
+- **diagrams.onprem.security.Boundary**
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 

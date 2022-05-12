@@ -127,8 +127,10 @@ Node classes list of generic provider.
 
 - **diagrams.generic.os.Android**
 - **diagrams.generic.os.Centos**
+- **diagrams.generic.os.Debian**
 - **diagrams.generic.os.IOS**
 - **diagrams.generic.os.LinuxGeneral**
+- **diagrams.generic.os.Raspbian**
 - **diagrams.generic.os.Suse**
 - **diagrams.generic.os.Ubuntu**
 - **diagrams.generic.os.Windows**

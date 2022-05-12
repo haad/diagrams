@@ -13,7 +13,8 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale", "cloudflare","splunk")
+    "programming", "saas", "elastic", "generic", "openstack", "outscale", "cloudflare","splunk", "terraform",
+    "tencentcloud")
 
 #########################
 #  Resource Processing  #
@@ -45,6 +46,11 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+<<<<<<< HEAD
+    "terraform": (),
+=======
+    "tencentcloud": (),
+>>>>>>> liyk1024/master
 }
 
 #########################
@@ -93,10 +99,17 @@ TITLE_WORDS = {
     "openstack": {
         "openstack": "OpenStack"
     },
+<<<<<<< HEAD
     "ibm": {
         "ibm": "IBMCloud"
+=======
+    "tencentcloud": {
+        "tencentcloud": "TencentCloud"
+>>>>>>> liyk1024/master
     },
 }
+
+KEEP_LOWER = ("terraform")
 
 # TODO: check if the classname exists
 ALIASES = {
@@ -465,4 +478,55 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+<<<<<<< HEAD
+    "terraform": {}
+=======
+    "tencentcloud": {
+        "application": {
+            "LogService": "CLS",
+            "CloudMessageQueue": "CMQ",
+            "LoadMaster": "LM"
+        },
+        "compute": {
+            "AutoScaling": "AS",
+            "CloudVirtualMachine": "CVM",
+            "TencentKubernetesEngine": "TKE",
+            "ServerlessCloudFunction": "SCF",
+            "TencentIC": "TIC",
+            "TencentServiceFramework": "TSF",
+            "Lighthouse": "Lighthouse"
+        },
+        "database": {
+            "TencentMysql": "MySQL",
+            "TencentSqlserver": "SQLServer",
+            "TencentPostgresql": "PostgreSQL",
+            "TencentRedis": "Redis",
+            "TencentMongodb": "MongoDB",
+            "TencentTDsql": "TDSQL",
+        },
+        "network": {
+            "CloudLoadBalancer": "CLB",
+            "CloudConnectNetwork": "CCN",
+            "ElasticIP": "EIP",
+            "VirtualPrivateCloud": "VPC",
+            "NATGateway": "NAT",
+            "VPNConnections": "VPN",
+            "PeeringConnection": "PC",
+            "ContentDeliveryNetwork": "CDN"
+        },
+        "security": {
+            "DataSecurityGateway": "DSG",
+            "CloudWP": "CWP",
+            "CloudFireWall": "CFW",
+            "DataSecurityAudit": "DSAudit",
+            "WebApplicationFirewall": "WAF"
+        },
+        "storage": {
+            "CloudHDFS": "CHDFS",
+            "CloudFileStorage": "CFS",
+            "CloudStorageGateway": "CSG",
+            "CloudObjectStorage": "COS"
+        }
+    },
+>>>>>>> liyk1024/master
 }

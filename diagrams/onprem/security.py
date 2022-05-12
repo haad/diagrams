@@ -16,6 +16,10 @@ class Fail2Ban(_Security):
     _icon = "fail2ban.png"
 
 
+class Boundary(_Security):
+    _icon = "boundary.png"
+
+
 class Trivy(_Security):
     _icon = "trivy.png"
 
