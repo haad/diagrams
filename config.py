@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale", "cloudflare")
+    "programming", "saas", "elastic", "generic", "openstack", "outscale", "cloudflare","splunk")
 
 #########################
 #  Resource Processing  #
@@ -39,6 +39,7 @@ FILE_PREFIXES = {
     "alibabacloud": (),
     "oci": ("OCI-icon-",),
     "programming": (),
+    "splunk": (),
     "saas": (),
     "elastic": (),
     "outscale": (),
@@ -417,6 +418,17 @@ ALIASES = {
         "framework": {
             "Fastapi": "FastAPI",
             "Graphql": "GraphQL"
+        },
+        "language": {
+            "Javascript": "JavaScript",
+            "Nodejs": "NodeJS",
+            "Php": "PHP",
+            "Typescript": "TypeScript"
+        },
+    },
+    "splunk": {
+        "framework": {
+            "Fastapi": "FastAPI"
         },
         "language": {
             "Javascript": "JavaScript",
