@@ -12,7 +12,7 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
+    "base", "onprem", "aws", "azure", "gcp", "ibm", "digitalocean", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
     "generic", "openstack", "outscale", "terraform", "tencentcloud")
 
 #########################
@@ -30,6 +30,7 @@ FILE_PREFIXES = {
     "onprem": (),
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
+    "digitalocean": (),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
     "ibm": (),
@@ -63,7 +64,7 @@ TMPL_MODULE = "module.tmpl"
 
 UPPER_WORDS = {
     "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
-    "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm"),
+    "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm", "vpn", "vpc"),
     "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
     "firebase": ("ab", "fcm", "ml"),
     "k8s": (
@@ -88,6 +89,9 @@ TITLE_WORDS = {
     },
     "aws": {
         "cloudfront": "CloudFront"
+    },
+    "digitalocean": {
+        "digitalocean": "DigitalOcean"
     },
     "openstack": {
         "openstack": "OpenStack"
@@ -398,6 +402,7 @@ ALIASES = {
             "ObjectTableStore": "OTS",
         }
     },
+    "digitalocean": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",

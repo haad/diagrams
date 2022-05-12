@@ -15,6 +15,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Beam**
 - **diagrams.onprem.analytics.Databricks**
 - **diagrams.onprem.analytics.Dbt**
+- **diagrams.onprem.analytics.Dremio**
 - **diagrams.onprem.analytics.Flink**
 - **diagrams.onprem.analytics.Hadoop**
 - **diagrams.onprem.analytics.Hive**
@@ -55,6 +56,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Teamcity**, **TC** (alias)
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
+- **diagrams.onprem.ci.Waypoint**
 - **diagrams.onprem.ci.Zuulci**, **ZuulCI** (alias)
 
 ## onprem.client
@@ -125,8 +127,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.iac.Ansible**
 - **diagrams.onprem.iac.Atlantis**
 - **diagrams.onprem.iac.Awx**
+- **diagrams.onprem.iac.Packer**
 - **diagrams.onprem.iac.Puppet**
 - **diagrams.onprem.iac.Terraform**
+- **diagrams.onprem.iac.Vagrant**
 
 ## onprem.identity
 
@@ -159,6 +163,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Grafana**
 - **diagrams.onprem.monitoring.Humio**
 - **diagrams.onprem.monitoring.Newrelic**
+- **diagrams.onprem.monitoring.Nagios**
 - **diagrams.onprem.monitoring.PrometheusOperator**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Sentry**
@@ -218,6 +223,7 @@ Node classes list of onprem provider.
 ## onprem.security
 
 - **diagrams.onprem.security.Bitwarden**
+- **diagrams.onprem.security.Boundary**
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 
