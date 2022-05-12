@@ -152,6 +152,9 @@ ALIASES = {
             "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
         },
+        "security": {
+            "Fail2Ban": "fail2ban",
+        },
         "storage": {
             "Ceph": "CEPH",
             "CephOsd": "CEPH_OSD",
@@ -412,7 +415,8 @@ ALIASES = {
     },
     "programming": {
         "framework": {
-            "Fastapi": "FastAPI"
+            "Fastapi": "FastAPI",
+            "Graphql": "GraphQL"
         },
         "language": {
             "Javascript": "JavaScript",

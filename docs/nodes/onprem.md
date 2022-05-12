@@ -138,6 +138,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.inmemory.Hazelcast**
 - **diagrams.onprem.inmemory.Memcached**
 - **diagrams.onprem.inmemory.Redis**
+- **diagrams.onprem.inmemory.Varnish**
 
 ## onprem.logging
 
@@ -158,8 +159,8 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Dynatrace**
 - **diagrams.onprem.monitoring.Grafana**
 - **diagrams.onprem.monitoring.Humio**
-- **diagrams.onprem.monitoring.Newrelic**
 - **diagrams.onprem.monitoring.Nagios**
+- **diagrams.onprem.monitoring.Newrelic**
 - **diagrams.onprem.monitoring.PrometheusOperator**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Sentry**
@@ -171,6 +172,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.network.Ambassador**
 - **diagrams.onprem.network.Apache**
+- **diagrams.onprem.network.Backupninja**
 - **diagrams.onprem.network.Bind9**
 - **diagrams.onprem.network.Caddy**
 - **diagrams.onprem.network.Consul**
@@ -219,6 +221,7 @@ Node classes list of onprem provider.
 ## onprem.security
 
 - **diagrams.onprem.security.Bitwarden**
+- **diagrams.onprem.security.Fail2Ban**, **fail2ban** (alias)
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 
