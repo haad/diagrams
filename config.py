@@ -12,7 +12,7 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
+    "base", "onprem", "aws", "azure", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
     "generic", "openstack", "outscale", "terraform")
 
 #########################
@@ -32,6 +32,7 @@ FILE_PREFIXES = {
     "azure": ("Azure-",),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
+    "ibm": (),
     "k8s": (),
     "alibabacloud": (),
     "oci": ("OCI-icon-",),
@@ -71,6 +72,7 @@ UPPER_WORDS = {
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
+    "ibm": ("ibm"),
 }
 
 TITLE_WORDS = {
@@ -86,6 +88,9 @@ TITLE_WORDS = {
     "openstack": {
         "openstack": "OpenStack"
     },
+    "ibm": {
+        "ibm": "IBMCloud"
+    },
 }
 
 KEEP_LOWER = ("terraform")
@@ -93,6 +98,9 @@ KEEP_LOWER = ("terraform")
 # TODO: check if the classname exists
 ALIASES = {
     "onprem": {
+        "analytics": {
+            "Powerbi": "PowerBI"
+        },
         "ci": {
             "Circleci": "CircleCI",
             "Concourseci": "ConcourseCI",
@@ -163,6 +171,7 @@ ALIASES = {
         },
         "compute": {
             "ApplicationAutoScaling": "AutoScaling",
+            "EC2Ami": "AMI",
             "EC2ContainerRegistry": "ECR",
             "ElasticBeanstalk": "EB",
             "ElasticContainerService": "ECS",
@@ -215,6 +224,9 @@ ALIASES = {
         "network": {
             "CloudFront": "CF",
             "ElasticLoadBalancing": "ELB",
+            "ElbApplicationLoadBalancer": "ALB",
+            "ElbClassicLoadBalancer": "CLB",
+            "ElbNetworkLoadBalancer": "NLB",
             "GlobalAccelerator": "GAX",
         },
         "security": {
@@ -242,6 +254,7 @@ ALIASES = {
         "compute": {
             "ContainerRegistries": "ACR",
             "KubernetesServices": "AKS",
+            "VMScaleSet": "VMSS"
         },
     },
     "gcp": {
@@ -388,13 +401,16 @@ ALIASES = {
             "OKEWhite": "ContainerEngineWhite",
         },
         "database": {
-            "AutonomousDatabase": "ADB",
-            "AutonomousDatabaseWhite": "ADBWhite",
-            "Databaseservice": "DBService",
-            "DatabaseserviceWhite": "DBServiceWhite",
+            "Autonomous": "ADB",
+            "AutonomousWhite": "ADBWhite",
+            "DatabaseService": "DBService",
+            "DatabaseServiceWhite": "DBServiceWhite",
         }
     },
     "programming": {
+        "framework": {
+            "Fastapi": "FastAPI"
+        },
         "language": {
             "Javascript": "JavaScript",
             "Nodejs": "NodeJS",
@@ -405,6 +421,7 @@ ALIASES = {
     "saas": {
         "logging": {
             "Datadog": "DataDog",
+            "Newrelic": "NewRelic"
         }
     },
     "elastic": {
@@ -415,6 +432,7 @@ ALIASES = {
     "outscale": {
         "Osc": "OSC",
     },
+    "ibm": {},
     "generic": {},
     "openstack": {
         "user": {
