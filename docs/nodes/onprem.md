@@ -159,6 +159,8 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Dynatrace**
 - **diagrams.onprem.monitoring.Grafana**
 - **diagrams.onprem.monitoring.Humio**
+- **diagrams.onprem.monitoring.Monit**
+- **diagrams.onprem.monitoring.Newrelic**
 - **diagrams.onprem.monitoring.Nagios**
 - **diagrams.onprem.monitoring.Newrelic**
 - **diagrams.onprem.monitoring.PrometheusOperator**
