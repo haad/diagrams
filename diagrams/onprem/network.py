@@ -100,6 +100,10 @@ class Pomerium(_Network):
     _icon = "pomerium.png"
 
 
+class Postfix(_Network):
+    _icon = "postfix.png"
+
+
 class Powerdns(_Network):
     _icon = "powerdns.png"
 
