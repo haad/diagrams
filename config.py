@@ -46,11 +46,8 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
-<<<<<<< HEAD
     "terraform": (),
-=======
     "tencentcloud": (),
->>>>>>> liyk1024/master
 }
 
 #########################
@@ -99,13 +96,11 @@ TITLE_WORDS = {
     "openstack": {
         "openstack": "OpenStack"
     },
-<<<<<<< HEAD
     "ibm": {
         "ibm": "IBMCloud"
-=======
+    },
     "tencentcloud": {
         "tencentcloud": "TencentCloud"
->>>>>>> liyk1024/master
     },
 }
 
@@ -478,9 +473,7 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
-<<<<<<< HEAD
-    "terraform": {}
-=======
+    "terraform": {},
     "tencentcloud": {
         "application": {
             "LogService": "CLS",
@@ -528,5 +521,4 @@ ALIASES = {
             "CloudObjectStorage": "COS"
         }
     },
->>>>>>> liyk1024/master
 }
